@@ -20,6 +20,10 @@ android {
     dataBinding{
         enabled true
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
@@ -34,5 +38,7 @@ dependencies {
     // retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
 }
